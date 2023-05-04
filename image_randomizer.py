@@ -43,7 +43,7 @@ def split_image(img, rows, columns):
 
 def add_watermark(img, text):
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("Helvetica.ttc", 86)
+    font = ImageFont.truetype("DejaVuSans.ttf", 86)
     text_width, text_height = draw.textsize(text, font=font)
     padding = 10
 
