@@ -1,6 +1,8 @@
-# Image Randomizer
+[![ci](https://github.com/gfarcas/label-game/actions/workflows/docker-image.yml/badge.svg)](https://github.com/gfarcas/label-game/actions/workflows/docker-image.yml)
 
-Image Randomizer is a simple Python application that takes an input image, resizes it to fit an A4 size, splits it into 24 (3x9) rectangles, randomizes the order of the rectangles, and reassembles them into a new A4 image. The application also generates a version of the image without shuffling the rectangles. Each rectangle is labeled with a number indicating its initial position in the original image.
+# Label Game
+
+Label Game is a simple Python application that takes an input image, resizes it to fit an A4 size, splits it into 24 (3x9) rectangles, randomizes the order of the rectangles, and reassembles them into a new A4 image. The application also generates a version of the image without shuffling the rectangles. Each rectangle is labeled with a number indicating its initial position in the original image.
 
 The application consists of a command-line script (`image_randomizer.py`) and a Flask web server (`app.py`) with an HTML interface (`index.html`).
 
