@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 # Install the required packages
 RUN apt-get update
-RUN apt-get install zlib1g-dev
+RUN apt-get install zlib1g-dev -y
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
