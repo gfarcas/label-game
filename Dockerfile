@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 # Install the required packages
 RUN apt-get update
-RUN apt-get install libjpeg-dev zlib1g-dev -y
+RUN apt-get install libjpeg-dev zlib1g-dev gcc -y
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
